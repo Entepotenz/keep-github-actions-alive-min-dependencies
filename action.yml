@@ -17,7 +17,7 @@ inputs:
     required: false
   TIME_ELAPSED_THRESHOLD_IN_DAYS:
     description: threshold for inactivity in the git repo which triggers keep alive commit (in days)
-    default: '50'
+    default: "50"
     required: false
 runs:
   using: "composite"

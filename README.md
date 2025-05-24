@@ -24,17 +24,17 @@ the action will add an empty commit to the git repository.
 1. ```yaml
     name: Github Action with a cronjob trigger
     on:
-    schedule:
-        - cron: "0 0 * * *"
+        schedule:
+            - cron: "0 0 * * *"
 
     jobs:
-    cronjob-based-github-action:
-        name: Cronjob based github action
-        runs-on: ubuntu-latest
-        steps:
-        - uses: actions/checkout@v4
-        # - steps
-        - uses: entepotenz/keep-github-actions-alive-min-dependencies@v1
+        cronjob-based-github-action:
+            name: Cronjob based github action
+            runs-on: ubuntu-latest
+            steps:
+                - uses: actions/checkout@v4
+                # - steps
+                - uses: entepotenz/keep-github-actions-alive-min-dependencies@v1
     ```
 
 ## Options

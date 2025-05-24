@@ -1,5 +1,4 @@
 ---
-
 name: Create GitHubNext diagram
 # yamllint disable-line rule:truthy
 on:

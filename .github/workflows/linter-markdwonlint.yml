@@ -1,12 +1,11 @@
 ---
-
 name: Check for linting Markdown
 
 # yamllint disable-line rule:truthy
 on:
   push:
     paths:
-      - '**.md'
+      - "**.md"
 permissions: read-all
 jobs:
   lint-shell-script:
@@ -16,6 +15,6 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: DavidAnson/markdownlint-cli2-action@05f32210e84442804257b2a6f20b273450ec8265  # v19.1.0
+      - uses: DavidAnson/markdownlint-cli2-action@05f32210e84442804257b2a6f20b273450ec8265 # v19.1.0
         with:
-          globs: '**/*.md'
+          globs: "**/*.md"

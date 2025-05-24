@@ -1,13 +1,12 @@
 ---
-
 name: Check for linting github action
 
 # yamllint disable-line rule:truthy
 on:
   push:
     paths:
-      - '.github/**.yml'
-      - '.github/**.yaml'
+      - ".github/**.yml"
+      - ".github/**.yaml"
 permissions: read-all
 jobs:
   lint-shell-script:
