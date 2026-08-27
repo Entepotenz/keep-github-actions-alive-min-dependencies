@@ -63,3 +63,5 @@ runs:
 branding:
   icon: truck
   color: blue
+  - name: Keep your GitHub Actions alive automatically
+  uses: Entepotenz/keep-github-actions-alive-min-dependencies@v1
